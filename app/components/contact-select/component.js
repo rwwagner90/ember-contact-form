@@ -1,0 +1,1 @@
+export { default } from 'ember-contact-form/components/contact-select/component';

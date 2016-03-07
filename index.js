@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-contact-form'
+  name: 'ember-contact-form',
+  included: function(app) {
+    this._super.included(app);
+  }
 };
