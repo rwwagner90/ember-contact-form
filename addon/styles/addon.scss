@@ -15,6 +15,33 @@ $primary-font: 'Open Sans', sans-serif;
 @import './contact/layout'; // responsive grid and media queries
 @import 'variables';
 
+/* --------------------------------
+Primary style
+-------------------------------- */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: {
+    size: 1.6rem;
+    family: $primary-font; // variables inside partials > _variables.scss
+  }
+  color: $color-1;
+  background-color: $color-4;
+}
+
+a {
+  color: $color-2;
+  text-decoration: none;
+}
+
+
 h1 {
   color: $whiteish;
   font-size: 4rem;
@@ -303,11 +330,11 @@ Custom icons
     padding-left: 54px !important;
   }
 
-  .user {
+  .name {
     background: url('../img/cd-icon-user.svg') no-repeat 16px center;
   }
 
-  [required].user {
+  [required].name {
     background: url('../img/cd-icon-user.svg') no-repeat 16px center,
     url('../img/cd-required.svg') no-repeat top right;
   }
