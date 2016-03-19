@@ -5,24 +5,24 @@
     </div>
 
     {{contact-input
-    fieldName="name"
-    labelText="Name"
-    required=true
-    type="text"
+      fieldName="name"
+      labelText="Name"
+      required=true
+      type="text"
     }}
 
     {{contact-input
-    fieldName="company"
-    labelText="Company"
-    required=false
-    type="text"
+      fieldName="company"
+      labelText="Company"
+      required=false
+      type="text"
     }}
 
     {{contact-input
-    fieldName="email"
-    labelText="Email"
-    required=true
-    type="email"
+      fieldName="email"
+      labelText="Email"
+      required=true
+      type="email"
     }}
   </fieldset>
 
@@ -33,12 +33,7 @@
       <h4>Budget</h4>
 
       <p class="cd-select icon">
-        <select class="budget">
-          <option value="0">Select Budget</option>
-          <option value="1">&lt; $5000</option>
-          <option value="2">$5000 - $10000</option>
-          <option value="3">&gt; $10000</option>
-        </select>
+        {{contact-select class="budget" options=model.options}}
       </p>
     </div>
 
