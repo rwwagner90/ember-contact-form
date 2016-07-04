@@ -5,24 +5,24 @@
     </div>
 
     {{contact-input
-      fieldName="name"
-      labelText="Name"
-      required=true
-      type="text"
+    fieldName="name"
+    labelText="Name"
+    required=true
+    type="text"
     }}
 
     {{contact-input
-      fieldName="company"
-      labelText="Company"
-      required=false
-      type="text"
+    fieldName="company"
+    labelText="Company"
+    required=false
+    type="text"
     }}
 
     {{contact-input
-      fieldName="email"
-      labelText="Email"
-      required=true
-      type="email"
+    fieldName="email"
+    labelText="Email"
+    required=true
+    type="email"
     }}
   </fieldset>
 
@@ -61,28 +61,26 @@
     <div>
       <h4>Features</h4>
 
-      <ul class="cd-form-list">
-        <li>
-          <input type="checkbox" id="cd-checkbox-1">
-          <label for="cd-checkbox-1">Option 1</label>
-        </li>
+      {{checkbox-list options=model.checkboxes}}
 
-        <li>
-          <input type="checkbox" id="cd-checkbox-2">
-          <label for="cd-checkbox-2">Option 2</label>
-        </li>
+      <!--li>
+        <input type="checkbox" id="cd-checkbox-2">
+        <label for="cd-checkbox-2">Option 2</label>
+      </li>
 
-        <li>
-          <input type="checkbox" id="cd-checkbox-3">
-          <label for="cd-checkbox-3">Option 3</label>
-        </li>
-      </ul>
+      <li>
+        <input type="checkbox" id="cd-checkbox-3">
+        <label for="cd-checkbox-3">Option 3</label>
+      </li-->
+
     </div>
 
-    <div class="icon">
-      <label class="cd-label" for="cd-textarea">Project description</label>
-      <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
-    </div>
+    {{contact-input
+    fieldName="textarea"
+    labelText="Project description"
+    required=true
+    textarea=true
+    }}
 
     <div>
       <input type="submit" value="Send Message">

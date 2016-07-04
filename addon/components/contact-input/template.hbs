@@ -1,2 +1,18 @@
 <label class="cd-label {{if value 'float'}}" for="{{idAndName}}">{{labelText}}</label>
-{{input classBinding="fieldName" id=idAndName name=idAndName required=required type=type value=value}}
+{{#if textarea}}
+  {{textarea
+  classBinding="fieldName"
+  id=idAndName
+  name=idAndName
+  required=required
+  type=type
+  value=value}}
+{{else}}
+  {{input
+  classBinding="fieldName"
+  id=idAndName
+  name=idAndName
+  required=required
+  type=type
+  value=value}}
+{{/if}}

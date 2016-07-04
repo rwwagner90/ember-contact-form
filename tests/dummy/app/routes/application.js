@@ -3,6 +3,20 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return {
+      checkboxes: [
+        {
+          fieldName: 'checkbox-1',
+          text: 'Option 1'
+        },
+        {
+          fieldName: 'checkbox-2',
+          text: 'Option 2'
+        },
+        {
+          fieldName: 'checkbox-3',
+          text: 'Option 3'
+        }
+      ],
       options: [{
         text: 'Select Budget',
         value: '0'
