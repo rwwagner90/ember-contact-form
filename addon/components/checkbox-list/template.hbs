@@ -1,8 +1,6 @@
-<ul class="cd-form-list">
-  {{#each options as |option|}}
-    {{contact-checkbox
-    fieldName=option.fieldName
-    labelText=option.text
-    }}
-  {{/each}}
-</ul>
+{{#each options as |option|}}
+  {{contact-checkbox
+  fieldName=option.fieldName
+  labelText=option.text
+  }}
+{{/each}}

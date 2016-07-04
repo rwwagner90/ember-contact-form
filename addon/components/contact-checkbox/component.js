@@ -1,8 +1,11 @@
 import Ember from 'ember';
 import layout from './template';
-import ContactInput from '../contact-input/component';
+const {Component, computed} = Ember;
 
-export default ContactInput.extend({
+export default Component.extend({
   layout,
-  tagName: 'li'
+  tagName: 'li',
+  idAndName: computed('fieldName', function () {
+    return 'cd-' + this.get('fieldName');
+  })
 });
