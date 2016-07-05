@@ -1,1 +1,0 @@
-export { default } from 'ember-contact-form/components/checkbox-list/component';

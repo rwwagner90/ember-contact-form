@@ -1,6 +1,9 @@
 {{#each options as |option|}}
-  {{contact-checkbox
+  {{list-item
+  checked=option.checked
   fieldName=option.fieldName
   labelText=option.text
+  name=option.name
+  type=type
   }}
 {{/each}}

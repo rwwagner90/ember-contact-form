@@ -40,28 +40,17 @@
     <div>
       <h4>Project type</h4>
 
-      <ul class="cd-form-list">
-        <li>
-          <input type="radio" name="radio-button" id="cd-radio-1" checked>
-          <label for="cd-radio-1">Choice 1</label>
-        </li>
-
-        <li>
-          <input type="radio" name="radio-button" id="cd-radio-2">
-          <label for="cd-radio-2">Choice 2</label>
-        </li>
-
-        <li>
-          <input type="radio" name="radio-button" id="cd-radio-3">
-          <label for="cd-radio-3">Choice 3</label>
-        </li>
-      </ul>
+      {{form-list
+      options=model.radioButtons
+      type="radio"}}
     </div>
 
     <div>
       <h4>Features</h4>
 
-      {{checkbox-list options=model.checkboxes}}
+      {{form-list
+      options=model.checkboxes
+      type="checkbox"}}
 
     </div>
 
