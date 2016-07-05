@@ -49,7 +49,7 @@ export default Ember.Route.extend({
           name: 'radio-button',
           text: 'Choice 3'
         }
-      ],
+      ]
     }
   }
 });
