@@ -5,11 +5,8 @@ moduleForComponent('list-item', 'Integration | Component | list item', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+test('id computed', function(assert) {
+  this.render(hbs`{{list-item fieldName='foo' type='checkbox'}}`);
 
-  this.render(hbs`{{list-item}}`);
-
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$('input').attr('id'), 'cd-foo', 'id set');
 });

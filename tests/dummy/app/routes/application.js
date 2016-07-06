@@ -32,19 +32,16 @@ export default Ember.Route.extend({
       }],
       radioButtons: [
         {
-          checked: true,
           fieldName: 'radio-1',
           name: 'radio-button',
           text: 'Choice 1'
         },
         {
-          checked: false,
           fieldName: 'radio-2',
           name: 'radio-button',
           text: 'Choice 2'
         },
         {
-          checked: false,
           fieldName: 'radio-3',
           name: 'radio-button',
           text: 'Choice 3'

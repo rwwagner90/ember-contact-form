@@ -1,9 +1,22 @@
-{{input
-checked=checked
-classBinding="fieldName"
-id=id
-name=name
-required=required
-type=type}}
+{{#if (eq type 'checkbox')}}
+  {{input
+  checked=checked
+  classBinding="fieldName"
+  id=id
+  name=name
+  required=required
+  type='checkbox'}}
+{{/if}}
 
-<label for="{{idAndName}}">{{labelText}}</label>
+{{#if (eq type 'radio')}}
+  {{radio-button
+  classBinding="fieldName"
+  groupValue=groupValue
+  name=name
+  radioId=id
+  required=required
+  value=fieldName}}
+{{/if}}
+
+
+<label for="{{id}}">{{labelText}}</label>

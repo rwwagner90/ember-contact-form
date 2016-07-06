@@ -5,11 +5,15 @@ moduleForComponent('contact-input', 'Integration | Component | contact input', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+test('class name applied', function(assert) {
+  this.render(hbs`{{contact-input fieldName='foo'}}`);
 
-  this.render(hbs`{{contact-input}}`);
+  assert.ok(this.$('input').hasClass('foo'), 'fieldName applied as class');
+});
 
-  assert.equal(this.$().text().trim(), '');
+test('id and name computed', function(assert) {
+  this.render(hbs`{{contact-input fieldName='foo'}}`);
+
+  assert.equal(this.$('input').attr('id'), 'cd-foo', 'id set');
+  assert.equal(this.$('input').attr('name'), 'cd-foo', 'name set');
 });
