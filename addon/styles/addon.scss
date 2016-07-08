@@ -125,7 +125,7 @@ h1 {
       width: 16px;
       height: 16px;
 
-      background: url('../img/cd-icon-arrow.svg') no-repeat center center;
+      background: url('../img/arrow.svg') no-repeat center center;
       pointer-events: none;
     }
   }
@@ -214,12 +214,12 @@ h1 {
 
   input[type="radio"] + label::after {
     /* custom image for radio button */
-    background-image: url('../img/cd-icon-radio.svg');
+    background-image: url('../img/radio.svg');
   }
 
   input[type="checkbox"] + label::after {
     /* custom image for checkbox */
-    background-image: url('../img/cd-icon-check.svg');
+    background-image: url('../img/check.svg');
   }
 
   input[type="radio"]:focus + label::before,
@@ -274,7 +274,7 @@ h1 {
   }
 
   [required] {
-    background: url('../img/cd-required.svg') no-repeat top right;
+    background: url('../img/required.svg') no-repeat top right;
   }
 
   .error-message p {
@@ -331,43 +331,43 @@ Custom icons
   }
 
   .name {
-    background: url('../img/cd-icon-user.svg') no-repeat 16px center;
+    background: url('../img/user.svg') no-repeat 16px center;
   }
 
   [required].name {
-    background: url('../img/cd-icon-user.svg') no-repeat 16px center,
-    url('../img/cd-required.svg') no-repeat top right;
+    background: url('../img/user.svg') no-repeat 16px center,
+    url('../img/required.svg') no-repeat top right;
   }
 
   .company {
-    background: url('../img/cd-icon-company.svg') no-repeat 16px center;
+    background: url('../img/company.svg') no-repeat 16px center;
   }
 
   [required].company {
-    background: url('../img/cd-icon-company.svg') no-repeat 16px center,
-    url('../img/cd-required.svg') no-repeat top right;
+    background: url('../img/company.svg') no-repeat 16px center,
+    url('../img/required.svg') no-repeat top right;
   }
 
   .email {
-    background: url('../img/cd-icon-email.svg') no-repeat 16px center;
+    background: url('../img/email.svg') no-repeat 16px center;
   }
 
   [required].email {
-    background: url('../img/cd-icon-email.svg') no-repeat 16px center,
-    url('../img/cd-required.svg') no-repeat top right;
+    background: url('../img/email.svg') no-repeat 16px center,
+    url('../img/required.svg') no-repeat top right;
   }
 
   .budget {
-    background: url('../img/cd-icon-budget.svg') no-repeat 16px center;
+    background: url('../img/budget.svg') no-repeat 16px center;
   }
 
   .message {
-    background: url('../img/cd-icon-message.svg') no-repeat 16px 16px;
+    background: url('../img/message.svg') no-repeat 16px 16px;
   }
 
   [required].message {
-    background: url('../img/cd-icon-message.svg') no-repeat 16px 16px,
-    url('../img/cd-required.svg') no-repeat top right;
+    background: url('../img/message.svg') no-repeat 16px 16px,
+    url('../img/required.svg') no-repeat top right;
   }
 }
 
