@@ -5,7 +5,7 @@ const {Component, computed} = Ember;
 export default Component.extend({
   layout,
   tagName: 'div',
-  classNameBindings: [':icon', 'textarea:message'],
+  classNameBindings: [':contact-item', ':icon', 'textarea:message'],
   idAndName: computed('fieldName', function() {
     return 'cd-' + this.get('fieldName');
   }),

@@ -3,5 +3,6 @@ import layout from './template';
 
 export default Ember.Component.extend({
   layout,
-  tagName: 'select'
+  tagName: 'select',
+  classNameBindings: [':contact-item']
 });

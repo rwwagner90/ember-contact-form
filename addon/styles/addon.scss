@@ -41,7 +41,6 @@ a {
   text-decoration: none;
 }
 
-
 h1 {
   color: $whiteish;
   font-size: 4rem;
@@ -406,4 +405,8 @@ FLoating labels
       top: 20px;
     }
   }
+}
+
+.contact-item {
+  width: 100%;
 }
