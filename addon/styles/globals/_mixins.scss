@@ -1,0 +1,27 @@
+//////////////////////////////
+// Ember Contact Form Mixins
+//////////////////////////////
+
+@mixin bp($breakpoint, $map: $breakpoints) {
+  $value: map-get($map, $breakpoint);
+
+  @if $value != null {
+    // Prints a media query based on the value
+    @media only screen and (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn 'No value with the name #{$breakpoint} could be retrieved from `$breakpoints`. Please make sure it is defined in the `$breakpoints` map.';
+  }
+}
+
+@mixin clearfix() {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

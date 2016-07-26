@@ -2,6 +2,13 @@
 // Ember Contact Form Variables
 //////////////////////////////
 
+// Breakpoints
+$breakpoints: (
+  'small': 480px,
+  'medium': 600px,
+  'large': 1170px
+);
+
 // Colors
 $c-brown: #62514F;
 $c-cream: #F5F0E1;
