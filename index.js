@@ -3,7 +3,7 @@
 
 module.exports = {
   name: 'ember-contact-form',
-  included: function(app) {
+  included(app) {
     this._super.included(app);
     app.import('vendor/img/arrow.svg');
     app.import('vendor/img/budget.svg');
@@ -14,5 +14,14 @@ module.exports = {
     app.import('vendor/img/radio.svg');
     app.import('vendor/img/required.svg');
     app.import('vendor/img/user.svg');
+  },
+  init() {
+    this.options = this.options || {};
+    this.options.babel = this.options.babel || {};
+    this.options.babel.optional = this.options.babel.optional || [];
+
+    if (this.options.babel.optional.indexOf('es7.decorators') === -1) {
+      this.options.babel.optional.push('es7.decorators');
+    }
   }
 };

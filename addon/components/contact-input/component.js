@@ -1,15 +1,15 @@
 import Ember from 'ember';
 import layout from './template';
-const {Component, computed} = Ember;
+import computed from 'ember-computed-decorators';
+const {Component} = Ember;
 
 export default Component.extend({
   layout,
   tagName: 'div',
   classNameBindings: [ ':contact-item', ':icon', 'textarea:message' ],
-  idAndName: computed('fieldName', function() {
-    let fieldName = this.get('fieldName');
-
+  @computed('fieldName')
+  idAndName(fieldName) {
     return `cd-${fieldName}`;
-  }),
+  },
   textarea: false
 });

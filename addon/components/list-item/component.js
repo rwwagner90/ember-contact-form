@@ -1,13 +1,13 @@
 import Ember from 'ember';
 import layout from './template';
-const {Component, computed} = Ember;
+import computed from 'ember-computed-decorators';
+const {Component} = Ember;
 
 export default Component.extend({
   layout,
   tagName: 'li',
-  id: computed('fieldName', function() {
-    let fieldName = this.get('fieldName');
-
+  @computed('fieldName')
+  id(fieldName) {
     return `cd-${fieldName}`;
-  })
+  }
 });
