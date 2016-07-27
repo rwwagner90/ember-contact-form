@@ -5,7 +5,7 @@ moduleForComponent('contact-select', 'Integration | Component | contact select',
   integration: true
 });
 
-test('options rendered correctly', function (assert) {
+test('options rendered correctly', function(assert) {
   this.set('options', [
     {
       text: 'foo',
