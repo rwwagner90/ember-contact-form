@@ -1,0 +1,30 @@
+// Colors
+$c-white: #fff;
+$c-black: #000;
+$c-pickled-bluewood: #2b3e51;
+$c-curious-blue: #2c97de;
+
+// Font Stacks
+$f-primary: 'Open Sans', sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $c-white;
+  color: $c-pickled-bluewood;
+  font-family: $f-primary;
+  font-size: 1.6rem;
+}
+
+a {
+  color: $c-curious-blue;
+  text-decoration: none;
+}
+
+h1 {
+  color: $c-white;
+  font-size: 4rem;
+  margin: 25px 0 50px 0;
+}
