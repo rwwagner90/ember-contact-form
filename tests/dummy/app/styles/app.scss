@@ -1,21 +1,17 @@
-// Colors
-$c-white: #fff;
-$c-black: #000;
-$c-pickled-bluewood: #2b3e51;
-$c-curious-blue: #2c97de;
+// Ember Contact Form Map
+$ecf: ();
 
-// Font Stacks
-$f-primary: 'Open Sans', sans-serif;
+// Import Addon Styles
+@import 'ember-contact-form';
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
   background: $c-white;
   color: $c-pickled-bluewood;
   font-family: $f-primary;
-  font-size: 1.6rem;
 }
 
 a {
@@ -25,6 +21,12 @@ a {
 
 h1 {
   color: $c-white;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 25px 0 50px 0;
+}
+
+// This style is specific to the Github page, not to the form itself
+// User will decide what margins it should have
+.cd-form {
+  margin: 4em auto;
 }
