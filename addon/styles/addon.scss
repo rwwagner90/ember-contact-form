@@ -17,32 +17,13 @@ $color-5: #e94b35; // Cinnabar
 Primary style
 -------------------------------- */
 
-*,
-*::after,
-*::before {
+.cd-form,
+.cd-form:before,
+.cd-form:after,
+.cd-form *,
+.cd-form *:before,
+.cd-form *:after {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: $color-4;
-  color: $color-1;
-  font-family: $f-primary;
-  font-size: 1.6rem;
-}
-
-a {
-  color: $color-2;
-  text-decoration: none;
-}
-
-h1 {
-  color: $c-whiteish;
-  font-size: 4rem;
-  margin: 25px 0 50px 0;
 }
 
 .cd-form {
