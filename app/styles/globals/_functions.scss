@@ -1,0 +1,13 @@
+//////////////////////////////
+// Ember Contact Form Functions
+//////////////////////////////
+
+@function _ecf($key) {
+  @if variable-exists(ecf) {
+    @if not map-has-key($ecf, $key) {
+      @warn "#{$key} is not a valid key in $ecf map";
+    }
+
+    @return map-get($ecf, $key);
+  }
+}

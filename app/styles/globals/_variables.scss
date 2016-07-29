@@ -1,0 +1,57 @@
+//////////////////////////////
+// Ember Contact Form Variables
+//////////////////////////////
+
+// Breakpoints
+$breakpoints: (
+  'small': 480px,
+  'medium': 600px,
+  'large': 1170px
+);
+
+// Colors
+$c-black: #000;
+$c-white: #fff;
+$c-brown: #62514F;
+$c-cream: #F5F0E1;
+$c-pickled-bluewood: #2b3e51;
+$c-curious-blue: #2c97de;
+$c-dark-blue: #354952;
+$c-light-blue: #82B4BC;
+$c-red: #E35746;
+$c-whiteish: #DFE6E9;
+$c-porcelain: #ecf0f1;
+$c-cinnabar: #e94b35;
+
+
+// Font Stacks
+$f-primary: 'Open Sans', sans-serif;
+
+// Addon Config Map
+$ecf-defaults: (
+  'background': $c-dark-blue,
+  'color': $c-whiteish,
+  'error-background': $c-cinnabar,
+  'error-color': $c-white,
+  'input-background': transparent,
+  'input-border': darken($c-whiteish, 10%),
+  'input-border-focus': $c-curious-blue,
+  'input-box-shadow-color': rgba($c-curious-blue, .2),
+  'input-color': $c-whiteish,
+  'max-width': 600px,
+  'radio-checkbox-background': $c-white,
+  'radio-checkbox-border': darken($c-porcelain, 10%),
+  'radio-checkbox-selected-background': $c-curious-blue,
+  'radio-checkbox-selected-box-shadow': rgba($c-curious-blue, .4),
+  'radio-checkbox-selected-box-shadow-focus': rgba($c-curious-blue, .6),
+  'required': $c-cinnabar,
+  'submit-background': $c-curious-blue,
+  'submit-background-hover': lighten($c-curious-blue, 5%),
+  'submit-background-focus': $c-pickled-bluewood,
+  'submit-color': $c-whiteish,
+  'width': 90%,
+);
+
+$ecf: () !default;
+
+$ecf: map-merge($ecf-defaults, $ecf);
