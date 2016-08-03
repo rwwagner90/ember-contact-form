@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {Route} = Ember;
+const { Route } = Ember;
 
 export default Route.extend({
   model() {
@@ -18,7 +18,7 @@ export default Route.extend({
           text: 'Option 3'
         }
       ],
-      options: [ {
+      options: [{
         text: 'Select Budget',
         value: '0'
       }, {
@@ -30,7 +30,7 @@ export default Route.extend({
       }, {
         text: '> $10000',
         value: '3'
-      } ],
+      }],
       radioButtons: [
         {
           fieldName: 'radio-1',
