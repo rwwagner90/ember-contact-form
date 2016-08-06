@@ -3,20 +3,19 @@
 //////////////////////////////
 
 // Globals
-@import './globals/variables';
-@import './globals/functions';
-@import './globals/mixins';
+@import './ember-contact-form/globals/variables';
+@import './ember-contact-form/globals/functions';
+@import './ember-contact-form/globals/mixins';
 
 //////////////////////////////
 // Primary Styles
 //////////////////////////////
-
 .cd-form,
-.cd-form:before,
-.cd-form:after,
 .cd-form *,
+.cd-form *:after,
 .cd-form *:before,
-.cd-form *:after {
+.cd-form:after,
+.cd-form:before {
   box-sizing: border-box;
 }
 
@@ -36,18 +35,16 @@
   div {
     position: relative;
     margin: 20px 0;
-
     @include bp(medium) {
       margin: 30px 0;
     }
   }
 
-  h4,
-  .cd-label {
+  .cd-label,
+  h4 {
     color: _ecf('color');
     font-size: 13px;
     margin-bottom: 10px;
-
     @include bp(medium) {
       font-size: 14px;
       margin-bottom: 10px;
@@ -59,22 +56,21 @@
   }
 
   input,
-  textarea,
+  label,
   select,
-  label {
+  textarea {
     color: _ecf('color');
     font-family: inherit;
     font-size: 16px;
   }
 
-  input[type="text"],
   input[type="email"],
-  textarea,
-  select {
+  input[type="text"],
+  select,
+  textarea {
     display: block;
     width: 100%;
     appearance: none;
-
     @include bp(medium) {
       padding: 16px;
     }
@@ -82,15 +78,14 @@
 
   // General Style for Input Elements
   input,
-  textarea,
-  select {
+  select,
+  textarea {
     background-color: _ecf('input-background');
     color: _ecf('input-color');
     padding: 12px;
     border: 1px solid _ecf('input-border');
-    border-radius: .25em;
+    border-radius: 0.25em;
     box-shadow: inset 0 1px 1px rgba(#000, .08);
-
     &:focus {
       outline: none;
       border-color: _ecf('input-border-focus');
@@ -142,8 +137,8 @@
   }
 
   // Hide original check and radio buttons
-  input[type=radio],
-  input[type=checkbox] {
+  input[type=checkbox],
+  input[type=radio] {
     position: absolute;
     left: 0;
     top: 50%;
@@ -154,16 +149,16 @@
     z-index: 2;
   }
 
-  input[type="radio"] + label,
-  input[type="checkbox"] + label {
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
     padding-left: 24px;
   }
 
   // Custom radio and check boxes
-  input[type="radio"] + label::before,
-  input[type="radio"] + label::after,
+  input[type="checkbox"] + label::after,
   input[type="checkbox"] + label::before,
-  input[type="checkbox"] + label::after {
+  input[type="radio"] + label::after,
+  input[type="radio"] + label::before {
     content: '';
     display: block;
     width: 16px;
@@ -174,25 +169,25 @@
     top: 50%;
   }
 
-  input[type="radio"] + label::before,
-  input[type="checkbox"] + label::before {
+  input[type="checkbox"] + label::before,
+  input[type="radio"] + label::before {
     background: _ecf('radio-checkbox-background');
     border: 1px solid _ecf('radio-checkbox-border');
     box-shadow: inset 0 1px 1px rgba(#000, .08);
   }
 
-  input[type="radio"] + label::before,
-  input[type="radio"] + label::after {
+  input[type="radio"] + label::after,
+  input[type="radio"] + label::before {
     border-radius: 50%;
   }
 
-  input[type="checkbox"] + label::before,
-  input[type="checkbox"] + label::after {
-    border-radius: .25em;
+  input[type="checkbox"] + label::after,
+  input[type="checkbox"] + label::before {
+    border-radius: 0.25em;
   }
 
-  input[type="radio"] + label::after,
-  input[type="checkbox"] + label::after {
+  input[type="checkbox"] + label::after,
+  input[type="radio"] + label::after {
     display: none;
     background-color: _ecf('radio-checkbox-selected-background');
     background-position: center center;
@@ -211,21 +206,19 @@
   }
 
   // Add focus effect for radio and check buttons
-  input[type="radio"]:focus + label::before,
-  input[type="checkbox"]:focus + label::before {
+  input[type="checkbox"]:focus + label::before,
+  input[type="radio"]:focus + label::before {
     box-shadow: 0 0 5px _ecf('radio-checkbox-selected-box-shadow-focus');
   }
-
-  input[type="radio"]:checked + label::after,
-  input[type="checkbox"]:checked + label::after {
+  input[type="checkbox"]:checked + label::after,
+  input[type="radio"]:checked + label::after {
     display: block;
   }
-
-  input[type="radio"]:checked + label::before,
-  input[type="radio"]:checked + label::after,
+  input[type="checkbox"]:checked + label::after,
   input[type="checkbox"]:checked + label::before,
-  input[type="checkbox"]:checked + label::after {
-    animation: cd-bounce .3s;
+  input[type="radio"]:checked + label::after,
+  input[type="radio"]:checked + label::before {
+    animation: cd-bounce 0.3s;
   }
 
   textarea {
@@ -244,18 +237,15 @@
     font-weight: bold;
     padding: 16px 20px;
     border: none;
-    border-radius: .25em;
+    border-radius: 0.25em;
     cursor: pointer;
-
     &:hover {
       background: _ecf('submit-background-hover');
     }
-
     &:focus {
       background: _ecf('submit-background-focus');
       outline: none;
     }
-
     &:active {
       transform: scale(.9);
     }
@@ -272,16 +262,16 @@
     font-size: 14px;
     text-align: center;
     padding: 16px;
-    border-radius: .25em;
+    border-radius: 0.25em;
   }
 
   .error {
     border-color: _ecf('error-background') !important;
   }
 }
-
 @keyframes cd-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
 
@@ -368,10 +358,7 @@
     left: 16px;
     font-size: 16px;
     cursor: text;
-    transition: top .2s,
-                left .2s,
-                font-size .2s;
-
+    transition: top 0.2s, left 0.2s, font-size 0.2s;
     @include bp(medium) {
       top: 20px;
     }
