@@ -1,6 +1,6 @@
 # Ember-contact-form
 
-<a href="https://shipshape.io/"><img src="http://i.imgur.com/EVjM7AV.png" width="100" height="100"/></a>
+<a href="https://shipshape.io/"><img src="http://i.imgur.com/bU4ABmk.png" width="100" height="100"/></a>
 
 [![npm version](https://badge.fury.io/js/ember-contact-form.svg)](http://badge.fury.io/js/ember-contact-form)
 [![npm](https://img.shields.io/npm/dm/ember-contact-form.svg)]()
