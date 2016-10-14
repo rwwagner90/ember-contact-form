@@ -32,7 +32,7 @@
   }
 
   // Form Element Wrapper
-  div {
+  .contact-item {
     position: relative;
     margin: 20px 0;
     @include bp(medium) {
