@@ -45,7 +45,7 @@
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-computed-decorators": "0.2.2",
-    "ember-radio-button": "1.0.7",
+    "ember-radio-button": "1.1.1",
     "ember-cli-sass": "6.0.0"
   },
   "engines": {
