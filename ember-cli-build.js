@@ -4,9 +4,7 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
-    autoprefixer: {
-      browsers: ['> 5%', 'IE >= 10']
-    }
+    // Add options here
   });
 
   /*

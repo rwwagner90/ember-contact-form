@@ -1,7 +1,19 @@
 {
   "name": "ember-contact-form",
   "version": "0.0.9",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Snazzy contact form for Ember applications",
+  "keywords": [
+    "ember-addon",
+    "contact",
+    "form",
+    "contact form"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Robert Wagner",
+    "email": "rwwagner90@gmail.com",
+    "url": "https://github.com/rwwagner90"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,15 +23,19 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
-  "author": "",
-  "license": "MIT",
+  "repository": "https://github.com/shipshapecode/ember-contact-form",
+  "dependencies": {
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.1.1",
+    "ember-computed-decorators": "0.2.2",
+    "ember-radio-button": "1.1.1",
+    "ember-cli-sass": "^6.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "broccoli-asset-rev": "^2.4.5",
-    "ember-cli": "2.10.0-beta.2",
+    "ember-cli": "2.11.0-beta.1",
     "ember-cli-app-version": "^2.0.0",
-    "ember-cli-autoprefixer": "0.6.0",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-eslint": "3.0.2",
     "ember-cli-github-pages": "0.1.2",
@@ -32,21 +48,12 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.6.2",
+    "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
     "ember-truth-helpers": "1.3.0",
     "eslint-plugin-ember-suave": "^1.0.0",
+    "ember-source": "^2.11.0-beta.2",
     "loader.js": "^4.0.10"
-  },
-  "keywords": [
-    "ember-addon"
-  ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.7",
-    "ember-cli-htmlbars": "^1.0.10",
-    "ember-computed-decorators": "0.2.2",
-    "ember-radio-button": "1.1.1",
-    "ember-cli-sass": "6.0.0"
   },
   "engines": {
     "node": ">= 0.12.0"
