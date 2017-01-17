@@ -29,7 +29,7 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.1.1",
-    "ember-computed-decorators": "0.2.2",
+    "ember-computed-decorators": "0.3.0",
     "ember-radio-button": "1.1.1",
     "ember-cli-sass": "^6.0.0"
   },
