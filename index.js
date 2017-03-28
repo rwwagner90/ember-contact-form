@@ -1,25 +1,20 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
   name: 'ember-contact-form',
-  included(app) {
+  included() {
     this._super.included.apply(this, arguments);
-    
-    // see: https://github.com/ember-cli/ember-cli/issues/3718
-    if (typeof app.import !== 'function' && app.app) {
-      app = app.app;
-    }
-    
-    app.import('vendor/img/arrow.svg');
-    app.import('vendor/img/budget.svg');
-    app.import('vendor/img/check.svg');
-    app.import('vendor/img/company.svg');
-    app.import('vendor/img/email.svg');
-    app.import('vendor/img/message.svg');
-    app.import('vendor/img/radio.svg');
-    app.import('vendor/img/required.svg');
-    app.import('vendor/img/user.svg');
+
+    this.import('vendor/img/arrow.svg');
+    this.import('vendor/img/budget.svg');
+    this.import('vendor/img/check.svg');
+    this.import('vendor/img/company.svg');
+    this.import('vendor/img/email.svg');
+    this.import('vendor/img/message.svg');
+    this.import('vendor/img/radio.svg');
+    this.import('vendor/img/required.svg');
+    this.import('vendor/img/user.svg');
   },
   init() {
     this._super.init && this._super.init.apply(this, arguments);
