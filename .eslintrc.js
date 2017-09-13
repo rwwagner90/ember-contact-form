@@ -1,8 +1,7 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2017,
     sourceType: 'module'
   },
   extends: [
@@ -10,7 +9,7 @@ module.exports = {
     'plugin:ember-suave/recommended'
   ],
   env: {
-    'browser': true
+    browser: true
   },
   rules: {
   }
