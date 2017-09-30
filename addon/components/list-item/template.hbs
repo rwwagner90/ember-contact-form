@@ -1,4 +1,4 @@
-{{#if (eq type 'checkbox')}}
+{{#if isCheckbox}}
   {{input
   checked=checked
   classBinding="fieldName"
@@ -8,7 +8,7 @@
   type='checkbox'}}
 {{/if}}
 
-{{#if (eq type 'radio')}}
+{{#if isRadio}}
   {{radio-button
   classBinding="fieldName"
   groupValue=groupValue
