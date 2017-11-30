@@ -70,6 +70,8 @@
   textarea {
     display: block;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     @include bp(medium) {
       padding: 16px;
