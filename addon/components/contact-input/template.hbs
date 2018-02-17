@@ -4,15 +4,27 @@
   classBinding="fieldName"
   id=idAndName
   name=idAndName
-  required=required
-  type=type
+  required=@required
+  type=@type
   value=value}}
 {{else}}
-  {{input
-  classBinding="fieldName"
-  id=idAndName
-  name=idAndName
-  required=required
-  type=type
-  value=value}}
+  {{#if (eq @type "text")}}
+    {{input
+      classBinding="fieldName"
+      id=idAndName
+      name=idAndName
+      required=@required
+      type="text"
+      value=value}}
+  {{/if}}
+  {{#if (eq @type "email")}}
+    {{input
+      classBinding="fieldName"
+      id=idAndName
+      name=idAndName
+      required=@required
+      type="email"
+      value=value}}
+  {{/if}}
+
 {{/if}}
