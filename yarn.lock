@@ -2189,7 +2189,7 @@ ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.7:
     ember-cli-version-checker "^1.0.2"
     resolve "^1.1.2"
 
-ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.2:
+ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.9.2:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.11.0.tgz#79cb184bac3c05bfe181ddc306bac100ab1f9493"
   dependencies:
@@ -2645,12 +2645,6 @@ ember-source@~3.1.0-beta.1:
     inflection "^1.12.0"
     jquery "^3.3.1"
     resolve "^1.5.0"
-
-ember-truth-helpers@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ember-truth-helpers/-/ember-truth-helpers-2.0.0.tgz#f3e2eef667859197f1328bb4f83b0b35b661c1ac"
-  dependencies:
-    ember-cli-babel "^6.8.2"
 
 ember-try-config@^2.2.0:
   version "2.2.0"

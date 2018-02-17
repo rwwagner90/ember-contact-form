@@ -1,14 +1,22 @@
 <label class="cd-label {{if value 'float'}}" for="{{idAndName}}">{{labelText}}</label>
 {{#if textarea}}
   {{textarea
-  classBinding="fieldName"
-  id=idAndName
-  name=idAndName
-  required=@required
-  type=@type
-  value=value}}
+    classBinding="fieldName"
+    id=idAndName
+    name=idAndName
+    required=@required
+    type=@type
+    value=value}}
 {{else}}
-  {{#if (eq @type "text")}}
+  {{#if isEmail}}
+    {{input
+      classBinding="fieldName"
+      id=idAndName
+      name=idAndName
+      required=@required
+      type="email"
+      value=value}}
+  {{else}}
     {{input
       classBinding="fieldName"
       id=idAndName
@@ -17,14 +25,4 @@
       type="text"
       value=value}}
   {{/if}}
-  {{#if (eq @type "email")}}
-    {{input
-      classBinding="fieldName"
-      id=idAndName
-      name=idAndName
-      required=@required
-      type="email"
-      value=value}}
-  {{/if}}
-
 {{/if}}
