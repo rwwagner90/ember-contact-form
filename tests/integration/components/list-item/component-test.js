@@ -1,12 +1,14 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { find, render } from '@ember/test-helpers';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('list-item', 'Integration | Component | list item', {
-  integration: true
-});
+module('Integration | Component | list item', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('id computed', function(assert) {
-  this.render(hbs`{{list-item fieldName='foo' type='checkbox'}}`);
+  test('id computed', async function(assert) {
+    await render(hbs`{{list-item fieldName='foo' type='checkbox'}}`);
 
-  assert.equal(this.$('input').attr('id'), 'cd-foo', 'id set');
+    assert.equal(find('input').id, 'cd-foo', 'id set');
+  });
 });
