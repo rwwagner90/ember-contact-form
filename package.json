@@ -1,6 +1,6 @@
 {
   "name": "ember-contact-form",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Snazzy contact form for Ember applications",
   "keywords": [
     "ember-addon",
