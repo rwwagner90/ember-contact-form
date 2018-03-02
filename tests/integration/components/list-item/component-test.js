@@ -6,9 +6,9 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | list item', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('id computed', async function(assert) {
+  test('id set', async function(assert) {
     await render(hbs`{{list-item fieldName='foo' type='checkbox'}}`);
 
-    assert.equal(find('input').id, 'cd-foo', 'id set');
+    assert.equal(find('input').id, 'foo', 'id set');
   });
 });

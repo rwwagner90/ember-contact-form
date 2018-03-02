@@ -12,10 +12,10 @@ module('Integration | Component | contact input', function(hooks) {
     assert.ok(find('input').classList.contains('foo'), 'fieldName applied as class');
   });
 
-  test('id and name computed', async function(assert) {
+  test('id and name set', async function(assert) {
     await render(hbs`{{contact-input fieldName='foo'}}`);
 
-    assert.equal(find('input').id, 'cd-foo', 'id set');
-    assert.equal(find('input').getAttribute('name'), 'cd-foo', 'name set');
+    assert.equal(find('input').id, 'foo', 'id set');
+    assert.equal(find('input').getAttribute('name'), 'foo', 'name set');
   });
 });
