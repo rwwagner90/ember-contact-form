@@ -1,9 +1,9 @@
-<label class="cd-label {{if value 'float'}}" for="{{idAndName}}">{{labelText}}</label>
+<label class="cd-label {{if value 'float'}}" for="{{fieldName}}">{{labelText}}</label>
 {{#if textarea}}
   {{textarea
     classBinding="fieldName"
-    id=idAndName
-    name=idAndName
+    id=fieldName
+    name=fieldName
     required=required
     type=type
     value=value}}
@@ -11,16 +11,16 @@
   {{#if isEmail}}
     {{input
       classBinding="fieldName"
-      id=idAndName
-      name=idAndName
+      id=fieldName
+      name=fieldName
       required=required
       type="email"
       value=value}}
   {{else}}
     {{input
       classBinding="fieldName"
-      id=idAndName
-      name=idAndName
+      id=fieldName
+      name=fieldName
       required=required
       type="text"
       value=value}}

@@ -4,5 +4,5 @@ import layout from './template';
 export default Component.extend({
   layout,
   tagName: 'ul',
-  classNameBindings: [':cd-form-list', ':contact-item']
+  classNames: ['cd-form-list', 'contact-item']
 });

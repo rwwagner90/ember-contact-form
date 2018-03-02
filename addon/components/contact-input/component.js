@@ -11,10 +11,5 @@ export default Component.extend({
 
   textarea: false,
 
-  isEmail: equal('type', 'email'),
-
-  idAndName: computed('fieldName', function() {
-    let fieldName = this.get('fieldName');
-    return `cd-${fieldName}`;
-  })
+  isEmail: equal('type', 'email')
 });

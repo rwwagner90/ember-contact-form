@@ -7,9 +7,5 @@ export default Component.extend({
   layout,
   tagName: 'li',
   isCheckbox: equal('type', 'checkbox'),
-  isRadio: equal('type', 'radio'),
-  id: computed('fieldName', function() {
-    let fieldName = this.get('fieldName');
-    return `cd-${fieldName}`;
-  })
+  isRadio: equal('type', 'radio')
 });

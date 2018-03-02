@@ -2611,9 +2611,9 @@ ember-qunit@^3.3.2:
     ember-cli-test-loader "^2.2.0"
     qunit "^2.5.0"
 
-ember-radio-button@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/ember-radio-button/-/ember-radio-button-1.2.2.tgz#e1a34dc636543fead0372bf66d7f7d854e96070a"
+ember-radio-button@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/ember-radio-button/-/ember-radio-button-1.2.3.tgz#2afaa165292826b9876e2bff2f007db22938d609"
   dependencies:
     ember-cli-babel "^6.9.2"
     ember-cli-htmlbars "^1.1.1"
