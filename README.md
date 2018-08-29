@@ -7,7 +7,7 @@
 [![Ember Observer Score](http://emberobserver.com/badges/ember-contact-form.svg)](http://emberobserver.com/addons/ember-contact-form)
 [![Build Status](https://travis-ci.org/shipshapecode/ember-contact-form.svg)](https://travis-ci.org/shipshapecode/ember-contact-form)
 [![Code Climate](https://codeclimate.com/github/shipshapecode/ember-contact-form/badges/gpa.svg)](https://codeclimate.com/github/shipshapecode/ember-contact-form)
-[![Test Coverage](https://codeclimate.com/github/shipshapecode/ember-contact-form/badges/coverage.svg)](https://codeclimate.com/github/shipshapecode/ember-contact-form/coverage)
+[![Test Coverage](https://codeclimate.com/github/shipshapecode/ember-contact-form/badges/coverage.svg)](https://codeclimate.com/github/shipshapecode/ember-contact-form/coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/shipshapecode/ember-contact-form.svg)](https://greenkeeper.io/)
 
 **WIP**: Not useable yet
 
