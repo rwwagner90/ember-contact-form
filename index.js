@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-contact-form',
+  name: require('./package').name,
   included() {
     this._super.included.apply(this, arguments);
 
